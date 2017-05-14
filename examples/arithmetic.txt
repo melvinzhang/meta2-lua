@@ -1,0 +1,8 @@
+.syntax expr
+  expr = exp2 *( '+' exp2 {'add'     }
+               | '-' exp2 {'sub'     });
+  exp2 = exp3 *( '*' exp3 {'mul'     }
+               | '/' exp3 {'div'     });
+  exp3 = .number          {'push ' $ }
+       | '(' expr ')';
+.end
