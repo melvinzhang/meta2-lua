@@ -35,7 +35,7 @@ end
 function primary()
 repeat
 repeat
-local _input = _run.parseID()
+local _input = _run.parse("^%a[%a%d]*")
 if not _switch then break   end
 io.write(_input)
 io.write('()')
@@ -54,14 +54,14 @@ if _switch then break end
 repeat
 _run.testSTR('.id')
 if not _switch then break   end
-io.write('local _input = _run.parseID()')
+io.write('local _input = _run.parse("^%a[%a%d]*")')
 io.write("\n")
 until true
 if _switch then break end
 repeat
 _run.testSTR('.number')
 if not _switch then break   end
-io.write('local _input = _run.parseNUM()')
+io.write('local _input = _run.parse("^%d+")')
 io.write("\n")
 until true
 if _switch then break end
@@ -172,7 +172,7 @@ end
 function rule()
 repeat
 repeat
-local _input = _run.parseID()
+local _input = _run.parse("^%a[%a%d]*")
 if not _switch then break   end
 io.write('function ')
 io.write(_input)
@@ -194,7 +194,7 @@ repeat
 repeat
 _run.testSTR('.syntax')
 if not _switch then break   end
-local _input = _run.parseID()
+local _input = _run.parse("^%a[%a%d]*")
 if not _switch then error() end
 io.write('local _run = require("runtime")')
 io.write("\n")

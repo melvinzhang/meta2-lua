@@ -7,8 +7,8 @@
 
   primary  = .id       { $ '()'                         }
            | .string   {'_run.testSTR(' $ ')'           }
-           | '.id'     {'local _input = _run.parseID()' }
-           | '.number' {'local _input = _run.parseNUM()'}
+           | '.id'     {'local _input = _run.parse("^%a[%a%d]*")' }
+           | '.number' {'local _input = _run.parse("^%d+")'}
            | '.string' {'local _input = _run.parseSTR()'}
            | '.empty'  {'_switch = true'                }
            | '(' choice ')'
