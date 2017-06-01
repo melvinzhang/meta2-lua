@@ -7,10 +7,10 @@
 
   primary  = .id       { $ '()'                         }
            | .string   {'_run.testSTR(' $ ')'           }
+           | '#'.string{'local _input = _run.parse(' $ ')' }
            | '.id'     {'local _input = _run.parse("^%a[%a%d]*")' }
            | '.number' {'local _input = _run.parse("^%d+")'}
            | '.string' {'local _input = _run.parseSTR()'}
-           | '#'.string{'local _input = _run.parse(' $ ')' }
            | '.empty'  {'_switch = true'                }
            | '(' choice ')'
            | '*'       {'repeat'                        }
