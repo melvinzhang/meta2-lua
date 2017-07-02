@@ -37,16 +37,12 @@ function test_prefix(String)
 end
 
 local function testSTR (String) return read(test_prefix(String)) end
-local function parseID ()       return read(match("^%a[%a%d]*")) end
-local function parseNUM()       return read(match("^%d+")      ) end
 local function parseSTR()       return read(match("^'[^']*'")  ) end
 
 local function parse(String)    return read(match(String))       end
 
 local M = {} -- public interface
 M.testSTR  = testSTR
-M.parseID  = parseID
-M.parseNUM = parseNUM
 M.parseSTR = parseSTR
 M.parse    = parse
 return M
