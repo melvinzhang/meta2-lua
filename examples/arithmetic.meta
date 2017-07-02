@@ -3,6 +3,6 @@
                | '-' exp2 {'sub'     });
   exp2 = exp3 *( '*' exp3 {'mul'     }
                | '/' exp3 {'div'     });
-  exp3 = num   | '(' expr ')';
-  num  = #'^%d+' {'push ' $ };
+  exp3 = number | '(' expr ')';
+  number = .number {'push ' $ };
 .end
