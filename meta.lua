@@ -52,17 +52,6 @@ io.write("\n")
 until true
 if _switch then break end
 repeat
-_run.testSTR('#')
-if not _switch then break   end
-local _input = _run.parseSTR()
-if not _switch then error() end
-io.write('local _input = _run.parse(')
-io.write(_input)
-io.write(')')
-io.write("\n")
-until true
-if _switch then break end
-repeat
 _run.testSTR('.id')
 if not _switch then break   end
 io.write('local _input = _run.parse("^%a[%a%d]*")')
