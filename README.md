@@ -4,7 +4,9 @@ META II is a domain specific language (DSL) for describing compilers. The META
 II compiler takes as input the DSL and outputs a compiler. The META II compiler
 can be described in this DSL.
 
-Started from http://loup-vaillant.fr/projects/metacompilers/
+Proposed by Dewey Val Schorre's 1965 paper [META II: A Syntax-Oriented Compiler Writing Language](http://www.chilton-computing.org.uk/acl/literature/reports/p025.htm)
+
+This implementation is based on Loup Vaillant's Meta II for Lua from http://loup-vaillant.fr/projects/metacompilers/
 
 ## Compiling the DSL
 The META II compiler reads the DSL from standard input and writes the compiler (implemented in Lua) to standard output.
