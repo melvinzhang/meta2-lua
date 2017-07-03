@@ -6,6 +6,23 @@ can be described in this DSL.
 
 Started from http://loup-vaillant.fr/projects/metacompilers/
 
+## Compiling the DSL
+The META II compiler reads the DSL from standard input and writes the compiler (implemented in Lua) to standard output.
+
+For example, to generate the compiler for arithemetic expressions, we can use the following pipeline:
+
+```
+cat examples/arithmetic.meta | lua meta.lua > examples/arithmetic.lua
+```
+
+Similarly the META II compiler is generated as follows:
+```
+cat meta.meta | lua meta.lua > meta2.lua
+```
+
+We can check that the output of the above (`meta2.lua`) is identical to `meta.lua`
+
+
 ## Description of META II compiler in META II
 ```
 .syntax program
