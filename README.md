@@ -62,6 +62,12 @@ We can check that the output of the above (`meta2.lua`) is identical to `meta.lu
 .end
 ```
 
+## META II in other languages
+
+Javascript: http://www.bayfronttechnologies.com/metaii.html
+
+C: https://github.com/lugon/META-II
+
 ## Influenced by META II
 ### OMeta
 Uses Parsing Expression Grammar which allows for limited backtracking and allows predicates to be written in the host language. See http://www.tinlizzie.org/ometa/
