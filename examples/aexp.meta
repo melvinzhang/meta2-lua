@@ -1,0 +1,15 @@
+.syntax AEXP
+
+AEXP = AS *AS;
+AS = .id {'address ' $} ':=' EX1 {'store'} ';';
+EX1 = EX2 *('+' EX2 {'add'} |
+            '-' EX2 {'sub'} );
+EX2 = EX3 *('*' EX3 {'mul'} |
+            '/' EX3 {'div'} );
+EX3 = EX4 *('^' EX3 {'exp'});
+EX4 = '+' EX5 | '-' EX5 {'minus'} | EX5;
+EX5 = .id {'load ' $} |
+      .number {'literal ' $} |
+      '(' EX1 ')';
+
+.end
