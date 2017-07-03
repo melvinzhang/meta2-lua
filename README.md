@@ -59,3 +59,10 @@ We can check that the output of the above (`meta2.lua`) is identical to `meta.lu
 
 .end
 ```
+
+## Influenced by META II
+### OMeta
+Uses Parsing Expression Grammar which allows for limited backtracking and allows predicates to be written in the host language. See http://www.tinlizzie.org/ometa/
+
+### Ohm
+Improves OMeta be separates the semantic actions from the parser. See https://github.com/harc/ohm
