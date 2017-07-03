@@ -1,3 +1,4 @@
+SHELL := /bin/bash
 .PHONY: all
 
 all: meta.lua
@@ -6,5 +7,4 @@ all: meta.lua
 	cat $^ | lua meta.lua > $@
 
 test: meta.meta
-	cat $^ | lua meta.lua > meta.next
-	diff meta.next meta.lua
+	diff meta.lua <(cat $^ | lua meta.lua)
