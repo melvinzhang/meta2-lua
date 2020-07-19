@@ -66,7 +66,10 @@ We can check that the output of the above (`meta2.lua`) is identical to `meta.lu
 
 Javascript: http://www.bayfronttechnologies.com/metaii.html
 
-C: https://github.com/lugon/META-II
+C: https://github.com/advancingdragon/meta
+
+Forth and C: https://github.com/siraben/meta-yacc
+
 
 ## Influenced by META II
 ### OMeta
