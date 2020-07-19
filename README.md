@@ -70,6 +70,7 @@ C: https://github.com/advancingdragon/meta
 
 Forth and C: https://github.com/siraben/meta-yacc
 
+C++: https://github.com/aburry/metaii
 
 ## Influenced by META II
 ### OMeta
