@@ -72,6 +72,8 @@ Forth and C: https://github.com/siraben/meta-yacc
 
 C++: https://github.com/aburry/metaii
 
+Assembler: https://github.com/pavel-krivanek/meta2-asm
+
 ## Influenced by META II
 ### OMeta
 Uses Parsing Expression Grammar which allows for limited backtracking and allows predicates to be written in the host language. See http://www.tinlizzie.org/ometa/
